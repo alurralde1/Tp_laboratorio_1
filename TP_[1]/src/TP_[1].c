@@ -1,10 +1,10 @@
 /*
  ============================================================================
  Name        : TP_1.c
- Author      :
+ Author      : Alurralde Julian
  Version     :
  Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Description : Trabajo Practico n°1
  ============================================================================
  */
 
