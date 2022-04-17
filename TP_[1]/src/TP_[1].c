@@ -64,15 +64,13 @@ int main(void) {
 				printf("Debe ingresar el precio de vuelo en Aerolineas\n");
 				scanf("%f", &aerolineas);
 				while (aerolineas < 0) {
-					printf(
-							"Error, ingrese el precio de vuelo correcto(Aerolineas):");
+					printf("Error, ingrese el precio de vuelo correcto(Aerolineas):");
 					scanf("%f", &aerolineas);
 				}
 				printf("Debe ingresar el precio de vuelo en Latam\n");
 				scanf("%f", &latam);
 				while (latam < 0) {
-					printf(
-							"Error, ingrese el precio de vuelo correcto(Latam):");
+					printf("Error, ingrese el precio de vuelo correcto(Latam):");
 					scanf("%f", &latam);
 				}
 				flag = 2;
@@ -127,8 +125,7 @@ int main(void) {
 				printf("La diferencia de precio es: %.2f\n", diferenciaPrecio);
 
 			} else {
-				printf(
-						"Debe ingresar los precios de vuelo y calcular los costos...\n");
+				printf("Debe ingresar los precios de vuelo y calcular los costos...\n");
 			}
 			break;
 		case 5:
