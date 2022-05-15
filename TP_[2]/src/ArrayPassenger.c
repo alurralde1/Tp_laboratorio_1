@@ -12,7 +12,10 @@
 #include "ArrayPassenger.h"
 #include "utn.h"
 
-
+/*Inicio el array
+ * ingresando un valor a isEmpty
+ *
+ */
 int initPassengers(Passenger* list, int len)
 {
 	int retorno = -1;
@@ -27,6 +30,10 @@ int initPassengers(Passenger* list, int len)
 	}
 	return retorno;
 }
+/*
+ * recorro el array para en cada posicion,verificar que hay un
+ * pasajero y asi imprimir su info.
+ */
 
 int printOnePassenger(Passenger *pElemento)
 {
@@ -114,6 +121,9 @@ int printPassengerByCode(Passenger *list, int len)
 
 	return retorno;
 }
+/*
+ * Funcion que recorre el array,buscando un lugar libre para guardar proximo pasajero
+ */
 
 int getEmptyIndex(Passenger *list, int len)
 {
@@ -132,6 +142,11 @@ int getEmptyIndex(Passenger *list, int len)
 	}
 	return retorno;
 }
+
+/*
+ * Funcion para agregar pasajero,que solicito datos al user
+ * y asigno automaticamente id
+ */
 
 int addPassenger(Passenger *list, int len, int *id, int indice)
 {
@@ -170,6 +185,10 @@ int addPassenger(Passenger *list, int len, int *id, int indice)
 	return retorno;
 }
 
+/*
+ * Recorre el array, buscando un id que se ingreso.Verifica que haya cargado
+ */
+
 int findPassengerById(Passenger *list, int len, int id)
 {
 	int respuesta = -1;
@@ -188,6 +207,9 @@ int findPassengerById(Passenger *list, int len, int id)
 	return respuesta;
 }
 
+/*
+ * Funcion que modifica el nombre del pasajero, guardando los datos anteriormente cargados
+ */
 int changeName(Passenger *list, int len, int indice)
 {
 	int respuesta = -1;
@@ -212,6 +234,10 @@ int changeName(Passenger *list, int len, int indice)
 	}
 	return respuesta;
 }
+
+/*
+ * Funcion que modifica el apellido del pasajero, guardando los datos anteriormente cargados
+ */
 int changeLastName(Passenger *list, int len, int indice)
 {
 	int respuesta = -1;
@@ -235,6 +261,10 @@ int changeLastName(Passenger *list, int len, int indice)
 	}
 	return respuesta;
 }
+
+/*
+ * Funcion que modifica el salario del pasajero,guardando los datos anteriormente cargados
+ */
 int changePrice(Passenger *list, int len, int indice)
 {
 	int respuesta = -1;
